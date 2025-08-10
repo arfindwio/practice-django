@@ -11,3 +11,5 @@
   <li>No posts yet.</li>
   {% endfor %}
 </ul>
+
+<p>Welcome, {{ request.user.username }}! <a href="{% url 'logout' %}">Logout</a></p>
